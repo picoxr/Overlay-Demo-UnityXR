@@ -43,4 +43,4 @@
 
 ## Note:
 - This demo is implemented in Unity 2019.4.
-- This demo works with Pico_UnityXR_SDK which can be found at [this link.](https://developer.pico-interactive.com/sdk/index?id=8)
+- This demo works with Pico_UnityXR_SDK which can be found at [here.](https://developer.pico-interactive.com/sdk/index?id=8)
