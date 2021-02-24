@@ -40,7 +40,7 @@
 
    <img src="./ReadMeScreenshot/8-1.png" width = "600" />
 
-   Note: This Demo is implemented with Unity 2019.4, and higher Unity versions are recommended.
+   Note: This Demo is implemented in Unity 2019.4.
 
 
 ## Note:
