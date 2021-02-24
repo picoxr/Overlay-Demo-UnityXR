@@ -24,7 +24,7 @@
 
    <img src="./ReadMeScreenshot/5-1.png" width = "600" />
 
-6. Create a new Quad named as Overlay (or else). Uncheck Box Collider and Mesh Render, and add Pvr_UnitySDKEyeOverlay class in Overlay. Transform information should stay the same as Hole.
+6. Create a new Quad named as Overlay (or else). Uncheck Box Collider and Mesh Render, and add PXR_OverLay class in Overlay. Transform information should stay the same as Hole.
 
    <img src="./ReadMeScreenshot/6-1.png"  width = "600"/>
 
