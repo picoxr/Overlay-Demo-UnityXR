@@ -42,5 +42,6 @@
 
 
 ## Note:
+- We now provide [**PicoDevSupport Portal**](https://picodevsupport.atlassian.net/servicedesk/customer/user/login?destination=portals) (Jira-based) which is best for tracking/monitoring development related issues/requirements. Please pay a visit and register.
 - This demo is implemented in Unity 2019.4.
 - Pico_UnityXR_SDK is not in the Demo, so the SDK needs to be imported separately via Unity packack manager after downloading the Demo， which can be found at [here.](https://developer.pico-interactive.com/sdk/index?id=8)
