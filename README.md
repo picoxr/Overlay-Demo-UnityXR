@@ -1,5 +1,7 @@
 # Overlay-Demo-UnityXR
 
+- If you have any questions/comments, please raise requests at [**Pico Developer Answers**](https://devanswers.pico-interactive.com/) (Jira-based) which is best for tracking/monitoring techincal related issues/requirements. 
+
 1. Create a Camera that is only used for UI rendering. And remove other camera from the UI layer. UI uses Unity’s default interactive class. It is shown as below:
 
    <img src="./ReadMeScreenshot/1-1.png"  width = "600"/>
@@ -44,4 +46,3 @@
 ## Note:
 - This demo is implemented in Unity 2019.4.
 - Pico_UnityXR_SDK is not in the Demo, so the SDK needs to be imported separately via Unity packack manager after downloading the Demo. SDK can be found at [here.](https://developer.pico-interactive.com/sdk/index?id=8)
-- If you have any questions/comments, please raise requests at [**PicoDevSupport Portal**](https://picodevsupport.atlassian.net/servicedesk/customer/user/login?
