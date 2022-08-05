@@ -29,6 +29,6 @@ public class UpdateOverlayTexture : MonoBehaviour
     {
 
         m_hole.material.mainTexture = m_uiCamera.targetTexture;
-        m_overlay.SetTexture(m_uiCamera.targetTexture);
+        m_overlay.SetTexture(m_uiCamera.targetTexture,false);
     }
 }

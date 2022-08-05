@@ -44,5 +44,5 @@
 
 
 ## Note:
-- This demo is implemented in Unity 2019.4.
+- This demo is implemented in Unity 2020.3.36f1.
 
