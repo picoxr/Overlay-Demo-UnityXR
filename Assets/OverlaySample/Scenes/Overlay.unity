@@ -579,9 +579,77 @@ MonoBehaviour:
   m_GameObject: {fileID: 211996939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ea353879ea8ddf44ade0c6ad17331e8, type: 3}
+  m_Script: {fileID: 11500000, guid: daeec670ce18c8d488f9f5b2e51c817b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerIndex: 0
+  layerDepth: 0
+  imageIndex: 0
+  overlayType: 1
+  overlayShape: 1
+  layerTransform: {fileID: 0}
+  xrRig: {fileID: 0}
+  layerTextures:
+  - {fileID: 0}
+  - {fileID: 0}
+  isDynamic: 0
+  layerTextureIds: 0000000000000000
+  mvMatrixs:
+  - e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
+  - e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
+  modelScales:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  modelRotations:
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
+  modelTranslations:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  cameraRotations:
+  - {x: 0, y: 0, z: 0, w: 0}
+  - {x: 0, y: 0, z: 0, w: 0}
+  cameraTranslations:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  layerEyeCamera:
+  - {fileID: 0}
+  - {fileID: 0}
+  overrideColorScaleAndOffset: 0
+  colorScale: {x: 1, y: 1, z: 1, w: 1}
+  colorOffset: {x: 0, y: 0, z: 0, w: 0}
+  isExternalAndroidSurface: 0
+  isExternalAndroidSurfaceDRM: 0
 --- !u!23 &211996941
 MeshRenderer:
   m_ObjectHideFlags: 0
