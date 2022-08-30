@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -590,9 +590,9 @@ MonoBehaviour:
   layerTransform: {fileID: 0}
   xrRig: {fileID: 0}
   layerTextures:
-  - {fileID: 0}
-  - {fileID: 0}
-  isDynamic: 0
+  - {fileID: 8400000, guid: 2690d15301e3ae0469b96709ce95fb1b, type: 2}
+  - {fileID: 8400000, guid: 2690d15301e3ae0469b96709ce95fb1b, type: 2}
+  isDynamic: 1
   layerTextureIds: 0000000000000000
   mvMatrixs:
   - e00: 0
@@ -3272,6 +3272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_uiCamera: {fileID: 1547693152}
   m_hole: {fileID: 80247014}
+  m_overlay: {fileID: 211996940}
 --- !u!20 &1547693152
 Camera:
   m_ObjectHideFlags: 0
