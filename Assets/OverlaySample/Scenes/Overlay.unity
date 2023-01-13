@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 80247015}
   - component: {fileID: 80247014}
   - component: {fileID: 80247013}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -340,7 +340,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159169764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1367959282}
@@ -397,7 +397,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 159169769}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: TestDemo, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -532,7 +532,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1, y: 0, z: 0, w: 1e-45}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -561,7 +561,6 @@ GameObject:
   m_Component:
   - component: {fileID: 211996943}
   - component: {fileID: 211996942}
-  - component: {fileID: 211996941}
   - component: {fileID: 211996940}
   m_Layer: 0
   m_Name: Overlay
@@ -582,18 +581,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daeec670ce18c8d488f9f5b2e51c817b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerIndex: 0
+  overlayIndex: 0
   layerDepth: 0
   imageIndex: 0
   overlayType: 1
   overlayShape: 1
-  layerTransform: {fileID: 0}
+  textureType: 0
+  overlayTransform: {fileID: 0}
   xrRig: {fileID: 0}
   layerTextures:
   - {fileID: 8400000, guid: 2690d15301e3ae0469b96709ce95fb1b, type: 2}
   - {fileID: 8400000, guid: 2690d15301e3ae0469b96709ce95fb1b, type: 2}
-  isDynamic: 1
-  layerTextureIds: 0000000000000000
+  isDynamic: 0
+  overlayTextureIds: 0000000000000000
   mvMatrixs:
   - e00: 0
     e01: 0
@@ -642,55 +642,48 @@ MonoBehaviour:
   cameraTranslations:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  layerEyeCamera:
+  overlayEyeCamera:
   - {fileID: 0}
   - {fileID: 0}
   overrideColorScaleAndOffset: 0
   colorScale: {x: 1, y: 1, z: 1, w: 1}
   colorOffset: {x: 0, y: 0, z: 0, w: 0}
-  isExternalAndroidSurface: 0
+  isExternalAndroidSurface: 1
   isExternalAndroidSurfaceDRM: 0
---- !u!23 &211996941
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211996939}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
+  externalAndroidSurface3DType: 0
+  radius: 0
+  useImageRect: 0
+  textureRect: 1
+  destinationRect: 0
+  srcRectLeft:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.5
+    height: 1
+  srcRectRight:
+    serializedVersion: 2
+    x: 0.5
+    y: 0
+    width: 0.5
+    height: 1
+  dstRectLeft:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  dstRectRight:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  useLayerBlend: 0
+  srcColor: 1
+  dstColor: 1
+  srcAlpha: 1
+  dstAlpha: 1
 --- !u!33 &211996942
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1312,8 +1305,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
+      time: -0.0083351135
+      value: 0.99079895
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1443,8 +1436,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: -0.0083351135
+        value: 0.99079895
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1546,9 +1539,9 @@ MonoBehaviour:
   m_PlayHapticsOnSelectExit: 0
   m_HapticSelectExitIntensity: 0
   m_HapticSelectExitDuration: 0
-  m_PlayHapticsOnHoverEnter: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
+  m_PlayHapticsOnHoverEnter: 1
+  m_HapticHoverEnterIntensity: 2
+  m_HapticHoverEnterDuration: 1000
   m_PlayHapticsOnHoverExit: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
@@ -1567,7 +1560,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32
   m_RaycastTriggerInteraction: 1
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
@@ -2621,7 +2614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1325110156
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3271,8 +3264,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_uiCamera: {fileID: 1547693152}
-  m_hole: {fileID: 80247014}
-  m_overlay: {fileID: 211996940}
 --- !u!20 &1547693152
 Camera:
   m_ObjectHideFlags: 0
@@ -3309,7 +3300,7 @@ Camera:
   m_TargetTexture: {fileID: 8400000, guid: 2690d15301e3ae0469b96709ce95fb1b, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
+  m_HDR: 0
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
@@ -3704,6 +3695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005656217}
   - component: {fileID: 2005656216}
+  - component: {fileID: 2005656218}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -3744,6 +3736,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2005656218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005656215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9f82377aeb9704193bd866d119aaa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showFps: 0
+  useDefaultFps: 1
+  customFps: 0
+  screenFade: 0
+  eyeTracking: 0
+  trackingMode: 0
+  faceTracking: 0
+  lipsyncTracking: 0
+  foveationLevel: 0
+  openMRC: 0
+  foregroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  backLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  backCameraObj: {fileID: 0}
+  foregroundCameraObj: {fileID: 0}
+  mrcRenderTexture: {fileID: 0}
+  foregroundMrcRenderTexture: {fileID: 0}
+  appCheckResult: 100
+  useRecommendedAntiAliasingLevel: 1
 --- !u!1 &2071228882
 GameObject:
   m_ObjectHideFlags: 0

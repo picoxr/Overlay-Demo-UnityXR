@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c52faa1787e89a4eaf8abdae2e6ae25, type: 3}
   m_Name: PXR Settings
   m_EditorClassIdentifier: 
-  stereoRenderingModeAndroid: 0
-  useDefaultRenderTexture: 1
-  eyeRenderTextureResolution: {x: 2048, y: 2048}
+  stereoRenderingModeAndroid: 1
+  systemDisplayFrequency: 0

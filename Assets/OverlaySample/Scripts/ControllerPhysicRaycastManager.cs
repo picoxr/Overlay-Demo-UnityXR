@@ -33,7 +33,7 @@ public class ControllerPhysicRaycastManager : MonoBehaviour {
         Debug.DrawLine(ray.origin, ray.direction, Color.yellow, 1f);
         if(Physics.Raycast(ray,out hit))
         {
-           if(hit.transform.gameObject.layer == 9)
+           if(hit.transform.gameObject.layer == 5)
            {
                ControllerInput.controllerPresent = true;
                 ControllerInput.controllerPosition = new Vector3(hit.textureCoord.x * RT_Size.x,
