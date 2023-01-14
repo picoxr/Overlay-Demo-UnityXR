@@ -37,12 +37,11 @@
    Hole is the only detection object of rays, but detection codes  can be modified based on actual needs.
 
    <img src="./ReadMeScreenshot/7-2.png" width = "600" />
-
-8. Update RenderTexture to Hole and Overlay per frame.
-
-   <img src="./ReadMeScreenshot/8-1.png" width = "600" />
+   
+   Hit layer is that of the Hole object
+   <img src="./ReadMeScreenshot/7-3.png" width = "600" />
 
 
 ## Note:
-- This demo is implemented in Unity 2020.3.36f1.
+- This demo is implemented in Unity 2020.3.43f1.
 
