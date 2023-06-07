@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/OverlaySample/Scenes/Overlay.unity
-    guid: fb8a2bd1433b29d4a9c6de8ae7946284
+    path: Assets/Scenes/Demo_Overlay.unity
+    guid: 940893077d45d5d4095c0cbff91154d1
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: 87c9b3627b002944d970bcc48f55b81c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: db82e081093642c41b3c5b1b43e88b20, type: 2}
